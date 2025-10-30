@@ -27,9 +27,9 @@ jobs:
           pip install requests beautifulsoup4 pandas
 
       - name: Run scraper
+        working-directory: Algeria_fx
         run: |
-          python Algeria_fx/Algeria_fx.py
-          working-directory: Algeria_fx
+          python Algeria_fx.py
 
       - name: Commit and push results
         run: |
