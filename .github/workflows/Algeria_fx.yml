@@ -29,6 +29,7 @@ jobs:
       - name: Run scraper
         run: |
           python Algeria_fx/Algeria_fx.py
+          working-directory: Algeria_fx
 
       - name: Commit and push results
         run: |
