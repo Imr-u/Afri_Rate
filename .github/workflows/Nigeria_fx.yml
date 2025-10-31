@@ -32,6 +32,7 @@ jobs:
           python Nigeria_fx/Nigeria_fx.py
 
       - name: Commit and push results
+        working-directory: Nigeria_fx
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
