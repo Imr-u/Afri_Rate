@@ -27,14 +27,13 @@ jobs:
           pip install requests beautifulsoup4 pandas
 
       - name: Run scraper
-        working-directory: Algeria_fx
         run: |
-          python Algeria_fx.py
+          python Algeria_fx/Algeria_fx.py
 
       - name: Commit and push results
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
-          git add Algeria_fx.csv
+          git add Algeria_fx/Algeria_fx.csv
           git commit -m "Update Algeria_fx.csv [skip ci]" || echo "No changes to commit"
           git push
