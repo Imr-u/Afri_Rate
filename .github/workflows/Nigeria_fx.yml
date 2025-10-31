@@ -27,6 +27,7 @@ jobs:
           pip install requests beautifulsoup4 pandas
 
       - name: Run scraper
+        working-directory: Nigeria_fx
         run: |
           python Nigeria_fx/Nigeria_fx.py
 
