@@ -28,6 +28,7 @@ jobs:
           pip install requests beautifulsoup4 pandas
 
       - name: Run scraper
+        working-directory: Ethiopia_fx
         run: |
           python Ethiopia_fx/ETB_fx.py
 
