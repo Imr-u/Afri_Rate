@@ -30,7 +30,7 @@ jobs:
       - name: Run scraper
         working-directory: Ethiopia_fx
         run: |
-          python Ethiopia_fx/ETB_fx.py
+          python ETB_fx.py
 
       - name: Commit and push results
         working-directory: Ethiopia_fx
