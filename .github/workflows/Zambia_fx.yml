@@ -32,6 +32,7 @@ jobs:
           python Zambia_fx/Zambia_fx.py
 
       - name: Commit and push results
+        working-directory: Zambia_fx
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
