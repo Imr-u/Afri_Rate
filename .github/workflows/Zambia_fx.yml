@@ -27,7 +27,7 @@ jobs:
           pip install requests beautifulsoup4 pandas
 
       - name: Run scraper
-        working-directory: Zambia_fx
+        working-directory: Scraper_&_datasets/Zambia_fx
         run: |
           python Zambia_fx.py
 

@@ -27,7 +27,7 @@ jobs:
           pip install requests beautifulsoup4 pandas
 
       - name: Run scraper
-        working-directory: Egypt_fx
+        working-directory: Scraper_&_datasets/Egypt_fx
         run: |
           python EGFX.py
 

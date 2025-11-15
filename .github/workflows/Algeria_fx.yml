@@ -27,7 +27,7 @@ jobs:
           pip install requests beautifulsoup4 pandas
 
       - name: Run scraper
-        working-directory: Algeria_fx
+        working-directory: Scraper_&_datasets/Algeria_fx
         run: |
           python Algeria_fx.py
 
