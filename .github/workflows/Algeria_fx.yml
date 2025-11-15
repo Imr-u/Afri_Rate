@@ -32,7 +32,7 @@ jobs:
           python Algeria_fx.py
 
       - name: Commit and push results
-        working-directory: Algeria_fx
+        working-directory: Scraper_&_datasets/Algeria_fx
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
