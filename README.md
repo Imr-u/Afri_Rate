@@ -1,3 +1,19 @@
+# African Central Bank Exchange Rates Dataset
+
+## 📖 Overview
+A curated collection of daily exchange rates from African central banks, automatically updated via web scraping pipelines. This project captures currency fluctuations from Ethiopia, Nigeria, Egypt, Zambia, and Algeria's official sources to create a unique pan-African forex dataset.
+
+## 🎯 Project Origin
+Born from a data engineering course project, this started with scraping Ethiopia's National Bank exchange rates and expanded to include multiple African nations. The goal: create a reliable, automated dataset for African currency analysis that's often overlooked in global financial data.
+
+## 🌍 Data Sources
+- **Ethiopia**: National Bank of Ethiopia
+- **Nigeria**: Central Bank of Nigeria  
+- **Egypt**: Central Bank of Egypt
+- **Zambia**: Bank of Zambia
+- **Algeria**: Bank of Algeria
+
+## 🔄 Data Pipeline Architecture
 - **Scrapers**: Python scripts handling each bank's unique website structure
 - **Automation**: GitHub Actions run daily to capture latest rates
 - **Storage**: AWS S3 for raw and processed data
