@@ -3,14 +3,22 @@
 ## 📖 Overview
 A curated collection of daily exchange rates from African central banks, automatically updated via web scraping pipelines. This project captures currency fluctuations from Ethiopia, Nigeria, Egypt, Zambia, and Algeria's official sources to create a unique pan-African forex dataset.
 
-## 🌍 Data Sources
+The down stream analysis uses the produced data to extract meaning full information accordingly
+![Sample Dasboard](doc/PFA_sample.png)
+
+## 🏗️ Data Architecture
+
+The data architcture follows the Medallion Architecture **Bronze** and **Silver** are specifically used
+![Data Architecture](doc/PFA_lifcycle.png)
+
+### 🌍 Data Sources
 - **Ethiopia**: National Bank of Ethiopia
 - **Nigeria**: Central Bank of Nigeria  
 - **Egypt**: Central Bank of Egypt
 - **Zambia**: Bank of Zambia
 - **Algeria**: Bank of Algeria
 
-## 🔄 Data Pipeline Architecture
+### 🔄 Data Pipeline Architecture
 - **Scrapers**: Python scripts handling each bank's unique website structure
 - **Automation**: GitHub Actions run daily to capture latest rates
 - **Storage**: AWS S3 for raw and processed data
