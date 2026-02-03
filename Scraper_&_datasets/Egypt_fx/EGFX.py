@@ -58,11 +58,3 @@ df_combined = pd.concat([df_old, df], ignore_index = True)
 df_clean = df_combined.drop_duplicates(subset=["currencies", "Scrape_time"])
 
 df_clean.to_csv(csv_file, index = False)
-
-
-
-# In[ ]:
-
-
-
-

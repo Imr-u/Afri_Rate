@@ -58,27 +58,3 @@ df_clean = df_combined.drop_duplicates(subset=["Code", "Scrape_time"], keep="fir
 
 df_clean.to_csv(file_name, index=False)
 
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-

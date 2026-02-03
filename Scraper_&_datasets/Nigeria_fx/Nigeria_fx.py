@@ -47,23 +47,3 @@ df = df.drop_duplicates(subset=["ratedate", "currency"], keep="first")
 
 # Step 5: Save cleaned dataset
 df.to_csv(file_path, index=False)
-
-
-# In[ ]:
-
-
-
-
-
-# In[25]:
-
-
-
-
-
-
-# In[ ]:
-
-
-
-
