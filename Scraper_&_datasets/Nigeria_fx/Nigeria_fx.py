@@ -5,7 +5,7 @@
 import requests
 import pandas as pd
 from bs4 import BeautifulSoup 
-import datetime
+from datetime import datetime, timezone
 import os
 
 
@@ -20,7 +20,7 @@ Headers = {
     "Accept": "application/json"
 }
 
-scrape_time = datetime.date.today().isoformat()
+scrape_time = datetime.now(timezone.utc)
 file_path = "Nigeria_fx.csv"
 
 # Step 1: Fetch JSON

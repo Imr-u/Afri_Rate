@@ -7,7 +7,7 @@
 import requests
 import pandas as pd
 from bs4 import BeautifulSoup 
-import datetime
+from datetime import datetime, timezone
 import os
 
 
@@ -21,7 +21,7 @@ Headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/
 page = requests.get(URL , headers = Headers)
 page.encoding = "utf-8"
 soup = BeautifulSoup(page.content, "html.parser")
-scrape_time = datetime.date.today().isoformat()
+scrape_time = datetime.now(timezone.utc)
 
 print("Status code:", page.status_code)
 print("Response length:", len(page.text))

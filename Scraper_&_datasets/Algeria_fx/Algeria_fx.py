@@ -7,7 +7,7 @@
 import requests
 import pandas as pd
 from bs4 import BeautifulSoup 
-import datetime
+from datetime import datetime, timezone
 import os
 import urllib3
 
@@ -28,7 +28,7 @@ response = requests.get(URL, headers=Headers, verify=False)
 soup = BeautifulSoup(response.content , "html.parser")
 div = soup.find("div", class_= "elementor-element elementor-element-730fc1b elementor-widget elementor-widget-shortcode" )
 table = div.find("table")
-scrape_time = datetime.date.today()
+scrape_time = datetime.now(timezone.utc)
 
 latest_date = table.find("thead").find_all("th")[1].get_text(strip=True)  # skip first blank
 

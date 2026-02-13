@@ -3,14 +3,14 @@
 
 from bs4 import BeautifulSoup
 import requests
-import datetime
+from datetime import datetime, timezone
 import os
 import pandas as pd
 
 
 url = "https://api.nbe.gov.et/api/filter-exchange-rates"
 
-date_str = datetime.date.today().strftime("%Y-%m-%d")
+date_str = datetime.now(timezone.utc)
 page = requests.get(url, params={"date": date_str})
 
 data = page.json()

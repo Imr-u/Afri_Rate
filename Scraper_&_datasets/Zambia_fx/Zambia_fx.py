@@ -7,7 +7,7 @@
 import requests
 import pandas as pd
 from bs4 import BeautifulSoup 
-import datetime
+from datetime import datetime, timezone
 import os
 
 
@@ -27,7 +27,7 @@ Headers = {"Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,imag
 page = requests.get(URL , headers = Headers)
 soup = BeautifulSoup(page.content, "html.parser")
 #print (soup)
-scrape_time = datetime.date.today()
+scrape_time = datetime.now(timezone.utc)
 
 table = soup.find("tr", class_="tableBorder")
 
