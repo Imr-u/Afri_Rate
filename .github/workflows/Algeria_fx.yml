@@ -2,7 +2,7 @@ name: Algeria currency
 
 on:
   schedule:
-    - cron: "0 */12 * * *"   # every 12 hours
+    - cron: "2 6 * * *"   # # Every dat at 6:02 AM UTC
   workflow_dispatch:         # allow manual run
 
 permissions:
