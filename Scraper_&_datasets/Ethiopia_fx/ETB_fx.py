@@ -47,5 +47,7 @@ else:
 # Step 4: save
 df_combined.to_csv(file_path, index=False)
 
+print(date_str)
+
 
 
