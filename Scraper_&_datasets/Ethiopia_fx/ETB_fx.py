@@ -24,16 +24,16 @@ if data.get("success") and "data" in data:
         selling = item["selling"]
         date_val = item["date"]
         avg = item["weighted_average"]
-        scrape_time = datetime.date.today()
+        date = datetime.date.today()
         pair = f"{currency_code}BIRR"
 
         records.append({
             "buying": buying,
             "selling": selling,
             "avg": avg,
-            "scrape_time": scrape_time,
+            "scrape_time": date_str,
             "Pair": pair,
-            "date": date_str
+            "date": date
         })
 df_new = pd.DataFrame(records)
 
@@ -47,7 +47,6 @@ else:
 # Step 4: save
 df_combined.to_csv(file_path, index=False)
 
-print(date_str)
 
 
 

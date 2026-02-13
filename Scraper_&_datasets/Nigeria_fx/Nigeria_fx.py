@@ -1,15 +1,11 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[13]:
 import requests
 import pandas as pd
 from bs4 import BeautifulSoup 
 from datetime import datetime, timezone
 import os
-
-
-# In[17]:
 
 
 # API endpoint (replace with the exact URL you found)

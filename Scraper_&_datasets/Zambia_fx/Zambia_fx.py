@@ -1,17 +1,12 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[2]:
-
-
 import requests
 import pandas as pd
 from bs4 import BeautifulSoup 
 from datetime import datetime, timezone
 import os
 
-
-# In[27]:
 
 
 URL = "https://www.fnbzambia.co.zm/Controller?nav=rates.forex.list.ForexRatesList"

@@ -2,7 +2,7 @@ name: Zambia currency
 
 on:
   schedule:
-    - cron: "1 6 * * *"   # Every dat at 6:01 AM UTC
+    - cron: "58 5 * * *"   # Every dat at 5:58 AM UTC
   workflow_dispatch:         # allow manual run
 
 permissions:
