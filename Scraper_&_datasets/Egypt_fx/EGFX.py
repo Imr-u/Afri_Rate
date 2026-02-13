@@ -23,13 +23,9 @@ page.encoding = "utf-8"
 soup = BeautifulSoup(page.content, "html.parser")
 scrape_time = datetime.now(timezone.utc)
 
-print("Status code:", page.status_code)
-print("Response length:", len(page.text))
-print("First 300 chars of response:\n", page.text[:300])
-
 table = soup.find("table", class_= "table-comp layout-auto")
 if not table:
-    raise RuntimeError("❌ Table not found — check if request blocked or HTML structure changed")
+    raise RuntimeError(" Table not found — check if request blocked or HTML structure changed")
 
 rows = []
 
@@ -40,10 +36,6 @@ for tr in table.select("tbody tr"):
         rows.append(cells)
 for r in rows:
     r.append(scrape_time)
-
-
-# In[25]:
-
 
 column = ["currencies", "Buy", "Sell", "Scrape_time"]
 df = pd.DataFrame(rows, columns = column)
