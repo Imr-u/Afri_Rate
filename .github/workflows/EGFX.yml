@@ -36,6 +36,6 @@ jobs:
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
-          git add EGFX.csv
-          git commit -m "Update EGFX.csv [skip ci]" || echo "No changes to commit"
+          git add EGP.csv
+          git commit -m "Update EGP.csv [skip ci]" || echo "No changes to commit"
           git push

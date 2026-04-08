@@ -36,6 +36,6 @@ jobs:
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
-          git add Zambia_fx.csv
-          git commit -m "Update Zambia_fx.csv on $(date '+%Y-%m-%d') [skip ci]"|| echo "No changes to commit"
+          git add ZMW_fx.csv
+          git commit -m "Update ZMW_fx.csv on $(date '+%Y-%m-%d') [skip ci]"|| echo "No changes to commit"
           git push

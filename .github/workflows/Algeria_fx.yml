@@ -36,6 +36,6 @@ jobs:
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
-          git add Algeria_fx.csv
-          git commit -m "Update Algeria_fx.csv [skip ci]" || echo "No changes to commit"
+          git add NGN_fx.csv
+          git commit -m "Update NGN_fx.csv [skip ci]" || echo "No changes to commit"
           git push
